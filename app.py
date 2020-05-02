@@ -14,7 +14,7 @@ app = Flask(__name__)
 #static route
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return render_template('index.html')
 
 @app.route("/youtuber")
 def youtuber():
