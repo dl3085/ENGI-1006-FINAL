@@ -16,6 +16,17 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
+@app.route("/youtuber")
+def youtuber():
+    return render_template('youtuber.html')
+
+@app.route("/exercise")
+def exercise():
+    return render_template('exercise.html')
+
+@app.route("/1006")
+def eng1006():
+    return "1006 homepage"
 #start the server
 if __name__ == "__main__":
     app.run()
